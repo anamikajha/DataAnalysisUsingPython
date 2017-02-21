@@ -4,3 +4,6 @@
 
 - This repository contains assignment files for Python
 - For now 8 files have been uploaded for the 8 question as a part of 1st Assignment
+Assignment 1 Comments:
+->Q5-Final answer
+->Q8-Remove username, punctuation
