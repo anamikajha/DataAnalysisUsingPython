@@ -3,9 +3,9 @@
 ### Dependency and Installation from sources
 - Python 3.5.2
 - NY Times Article
-  pip install nytimesarticle
+  - pip install nytimesarticle
 - Matplotlib
-  pip install matplotlib
+  - pip install matplotlib
 - Store API key as environment variable
 
 ## Question 1 : Exploratory Data Analysis of Enron Emails
