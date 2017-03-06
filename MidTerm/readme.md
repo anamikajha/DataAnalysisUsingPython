@@ -50,4 +50,9 @@ For our purposes, we only look at **`sent emails`** and ignore the inboxes of al
 
 ![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Monthly%20count%20of%20words.png)
 
+Casual vs Process count            |  Message vs Core count
+:-------------------------:        |:-------------------------:
+![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/casual%20count%20vs%20Process%20count.png)  |  ![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Message%20count%20vs%20core%20count.png)
+
+
 ![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/casual%20count%20vs%20Process%20count.png) ![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Message%20count%20vs%20core%20count.png)
