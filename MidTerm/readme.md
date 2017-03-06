@@ -16,10 +16,11 @@
 
 - This dataset contains data from about 150 users, mostly senior management of Enron, organized into folders. 
 - The corpus contains a total of about 0.5 million messages.
+
 The dataset consists of 517,431 messages that belong to 150 users, mostly senior management of the Enron Corp. Although the
 dataset is huge, folders of particular users are often quite sparse.
 
-For our purposes, we only look at ###sent emails and ignore the inboxes of all the employees. Through this approach, we can avoid accidentally analysing the spam emails that are among the received emails. Two main methods of analyses were employed, namely, topic modelling with Latent Dirichlet Allocation(LDA) and sentiment analysis.
+For our purposes, we only look at **sent emails** and ignore the inboxes of all the employees. Through this approach, we can avoid accidentally analysing the spam emails that are among the received emails. Two main methods of analyses were employed, namely, **topic modelling with Latent Dirichlet Allocation(LDA)** and **sentiment analysis**.
 
 
 
