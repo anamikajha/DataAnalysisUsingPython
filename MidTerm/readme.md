@@ -94,3 +94,7 @@ All these scores were exracted from the json files, sorted and split to write in
 Red Sox vs Opponet for latest 20 matches            |  Total matches won,lost and draw by Red Sox
 :-------------------------:                         |:-------------------------:
 ![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Red%20Sox%20vs%20opponent.png)  |  ![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Red%20Sox%20statistics.png)
+
+## Conclusion:
+- From the above plots we see that even in the latest 25 matches Rex Sox has only won a total of 11 matches. 
+- Similar statistics are reflected by the statistics plot which shows that of all 105 matches, Red Sox has won only 49 and lost 51 matches with a draw of 5 matches
