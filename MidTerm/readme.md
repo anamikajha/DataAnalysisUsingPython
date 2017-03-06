@@ -50,9 +50,7 @@ For our purposes, we only look at **`sent emails`** and ignore the inboxes of al
 
 ![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Monthly%20count%20of%20words.png)
 
-Clearly, there is an abnormal spike in the word counts in the month of March when Jefferey Skiing was replaces by Kenneth Lay as CEO in 2001. This could have resulted in a lot of mail chains between the top officials in the organisation. As we see the maximum pike is for process word counts which could be because of the change in process with new CEO. The trend then gradually declines followed by a steady increase near August. The abnormal spike can be explained Enron’s exemplary
-performance, Fortune Magazine had just named Enron as the ”Most Innovative American Company” 3 times in a row and the stock
-price of Enron was at an all-time high.  
+Clearly, there is an abnormal spike in the word counts in the month of March when Jefferey Skiing was replaces by Kenneth Lay as CEO in 2001. This could have resulted in a lot of mail chains between the top officials in the organisation. As we see the maximum spike is for process word counts which could be because of the change in process with new CEO. The abnormal spike can be explained Enron’s exemplary performance, Fortune Magazine had just named Enron as the ”Most Innovative American Company” 3 times in a row and the stock price of Enron was at an all-time high.  The trend then gradually declines followed by a steady increase near August. 
 
 We again see a dip in the word counts of process words in October, this is when 
 - Enron reported a $618 million loss and $1.2 billion value right off. 
