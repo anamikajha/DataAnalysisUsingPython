@@ -46,6 +46,10 @@ For our purposes, we only look at **`sent emails`** and ignore the inboxes of al
 3. Topic 3 contains words that are directly related to the core business of Enron like ”gas”, ”power” etc.
 4. Topic 4 also seems to be meeting-related but in a more casual tone and setting.
 
+- Once we have these list of words, the words extracted from the emails are matched against all 4 list and grouped into the respective categories.
+- Each word is written in 4 different csv files corresponding to each category with their year, month and count details
+- The count is then accumulated over months and year to plot meaningful data. 
+
 ## Analysis:
 
 ![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Monthly%20count%20of%20words.png)
@@ -68,3 +72,10 @@ Assistant), Richard Sanders (Assistant General Counsel) and Williams III (Senior
 ## References:
 - https://www.stat.berkeley.edu/~aldous/Research/Ugrad/HarishKumarReport.pdf
 - http://www.investopedia.com/updates/enron-scandal-summary/
+
+## Question 2 : NYT API data analysis.
+### Dataset 1 : Article Search dataset for Red Sox
+`100 jason files downloaded with Red Sox as the key word`
+![alt tag](http://content.sportslogos.net/logos/53/53/full/ba0u6pkfm7zmorlyyy00cx0os.gif)
+
+
