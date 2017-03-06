@@ -89,5 +89,8 @@ All these scores were exracted from the json files, sorted and split to write in
 - Total goals scored by Red Sox over 105 matches were plot against the opponent team using bar chart
 - A scatter plot of all Red Sox score vs opponent score was generated
 
-![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Monthly%20count%20of%20words.png)
+![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Scatterplot_redsoxvsopponent.png)
 
+Red Sox vs Opponet for latest 20 matches            |  Total matches won,lost and draw by Red Sox
+:-------------------------:                         |:-------------------------:
+![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Red%20Sox%20vs%20opponent.png)  |  ![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Red%20Sox%20statistics.png)
