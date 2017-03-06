@@ -65,17 +65,19 @@ Casual vs Process count            |  Message vs Core count
 ![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/casual%20count%20vs%20Process%20count.png)  |  ![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Message%20count%20vs%20core%20count.png)
 
 ## Conclusion:
-In conclusion, although topic modelling and sentiment analysis do provide some useful insights into the data, it is still unclear as to whether they can be used as investigation tools. However, with that being said, there are
-some ways in which the analysis can be improved upon. For example, analysis can be conducted by focusing on users who directories are especially large, namely, Sally Beck (Chief Operating Officer), Darren Farmer (Logistics Manager), Vincent Kaminski (Head of Quantitative Modeling Group), Louise Kitchen (President of EnronOnline), Michelle Lokay (Administrative
-Assistant), Richard Sanders (Assistant General Counsel) and Williams III (Senior Analyst). This would ensure that only the emails of most relevant people to the scandal are examined and this might reveal more interesting patterns.
+In conclusion, although topic modelling and sentiment analysis do provide some useful insights into the data, it is still unclear as to whether they can be used as investigation tools. However, with that being said, there are some ways in which the analysis can be improved upon. For example, analysis can be conducted by focusing on users who directories are especially large, namely, Sally Beck (Chief Operating Officer), Darren Farmer (Logistics Manager), Vincent Kaminski (Head of Quantitative Modeling Group), Louise Kitchen (President of EnronOnline), Michelle Lokay (Administrative Assistant), Richard Sanders (Assistant General Counsel) and Williams III (Senior Analyst). This would ensure that only the emails of most relevant people to the scandal are examined and this might reveal more interesting patterns.
 
 ## References:
 - https://www.stat.berkeley.edu/~aldous/Research/Ugrad/HarishKumarReport.pdf
 - http://www.investopedia.com/updates/enron-scandal-summary/
 
+==============================================================================================================================
 ## Question 2 : NYT API data analysis.
 ### Dataset 1 : Article Search dataset for Red Sox
+
 `100 jason files downloaded with Red Sox as the key word`
-![alt tag](http://content.sportslogos.net/logos/53/53/full/ba0u6pkfm7zmorlyyy00cx0os.gif)
+
+
+![alt tag](http://bsbtickets.com/wp-content/uploads/2017/01/redsox1.jpg)
 
 
