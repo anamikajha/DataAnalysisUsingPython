@@ -26,17 +26,6 @@ For our purposes, we only look at `**sent emails**` and ignore the inboxes of al
 - the emails in their raw form contain a lot of information that is unsuitable for topic modelling analysis.
 - Hence we filterd out the header information such as the Date, Subject etc.
 - `**Latent Dirichlet**` Allocation was performed on the dataset with the number of topics, k = 4. The following is a list of the top 10 terms for each of the 4 topics. Note that the words have been stemmed to save memory.
-- Topic 1 Topic 2 Topic 3 Topic 4
-”message” ”enron” ”market” ”thank”
-”origin” ”deal” ”gas” ”call”
-”pleas” ”agreement” ”price” ”time”
-”email” ”chang” ”power” ”meet”
-”thank” ”contract” ”compani” ”look”
-”attach” ”corp” ”energi” ”week”
-”file” ”fax” ”trade” ”day”
-”copi” ”houston” ”busi” ”dont”
-”inform” ”date” ”servic” ”vinc”
-”receiv” ”america” ”manag” ”talk”
 
 | Meeting | Process | Core   | Casual
 | --------|:--------| ------:|:-------
@@ -52,4 +41,7 @@ For our purposes, we only look at `**sent emails**` and ignore the inboxes of al
 | receiv  | america | manag  | talk
 
 
-
+1. Topic 1 contains a lot of meeting related words, perhaps they are from emails that were sent as meeting notices.
+2. Topic 2 while related to business seems to be more about the process rather than the content of the core business. It has a lot of terms relevant to business legalities.
+3. Topic 3 contains words that are directly related to the core business of Enron like ”gas”, ”power” etc.
+4. Topic 4 also seems to be meeting-related but in a more casual tone and setting.
