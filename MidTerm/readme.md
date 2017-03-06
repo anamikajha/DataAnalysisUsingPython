@@ -50,6 +50,23 @@ For our purposes, we only look at **`sent emails`** and ignore the inboxes of al
 
 ![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Monthly%20count%20of%20words.png)
 
+Clearly, there is an abnormal spike in the word counts in the month of March when Jefferey Skiing was replaces by Kenneth Lay as CEO in 2001. This could have resulted in a lot of mail chains between the top officials in the organisation. As we see the maximum pike is for process word counts which could be because of the change in process with new CEO. The trend then gradually declines followed by a steady increase near August. The abnormal spike can be explained Enron’s exemplary
+performance, Fortune Magazine had just named Enron as the ”Most Innovative American Company” 3 times in a row and the stock
+price of Enron was at an all-time high.  
+
+We again see a dip in the word counts of process words in October, this is when 
+- Enron reported a $618 million loss and $1.2 billion value right off. 
+- Enrons stock price dropped to alomst half of its price in this month
+
 Casual vs Process count            |  Message vs Core count
 :-------------------------:        |:-------------------------:
 ![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/casual%20count%20vs%20Process%20count.png)  |  ![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Message%20count%20vs%20core%20count.png)
+
+## Conclusion:
+In conclusion, although topic modelling and sentiment analysis do provide some useful insights into the data, it is still unclear as to whether they can be used as investigation tools. However, with that being said, there are
+some ways in which the analysis can be improved upon. For example, analysis can be conducted by focusing on users who directories are especially large, namely, Sally Beck (Chief Operating Officer), Darren Farmer (Logistics Manager), Vincent Kaminski (Head of Quantitative Modeling Group), Louise Kitchen (President of EnronOnline), Michelle Lokay (Administrative
+Assistant), Richard Sanders (Assistant General Counsel) and Williams III (Senior Analyst). This would ensure that only the emails of most relevant people to the scandal are examined and this might reveal more interesting patterns.
+
+## References:
+- https://www.stat.berkeley.edu/~aldous/Research/Ugrad/HarishKumarReport.pdf
+- http://www.investopedia.com/updates/enron-scandal-summary/
