@@ -48,4 +48,4 @@ For our purposes, we only look at **`sent emails`** and ignore the inboxes of al
 
 ## Analysis:
 
-![alt tag](file:///usr/local/share/Word%20count%20for%20different%20types.html)
+![alt tag](DataAnalysisUsingPython/MidTerm/Extra Files/Screen Shot 2017-03-06 at 3.53.26 PM.png)
