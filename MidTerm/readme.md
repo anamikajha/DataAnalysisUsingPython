@@ -75,9 +75,19 @@ In conclusion, although topic modelling and sentiment analysis do provide some u
 ## Question 2 : NYT API data analysis.
 ### Dataset 1 : Article Search dataset for Red Sox
 
-`100 jason files downloaded with Red Sox as the key word`
+`150 jason files downloaded with Red Sox as the key word`
 
 
 ![alt tag](http://bsbtickets.com/wp-content/uploads/2017/01/redsox1.jpg)
 
+## Analysis: 
+
+The dataset consists of 150 json files which were read using the glob function. The articles were analyzed one by one and a pattern on score of all the matches Red Sox has played was observed under the content_kicker tag of json files.
+All these scores were exracted from the json files, sorted and split to write in the resulting csv file as a score of Red Sox vs Score of Opponent team
+
+- Total count of the matches won, lost and draw were calculated.
+- Total goals scored by Red Sox over 105 matches were plot against the opponent team using bar chart
+- A scatter plot of all Red Sox score vs opponent score was generated
+
+![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Monthly%20count%20of%20words.png)
 
