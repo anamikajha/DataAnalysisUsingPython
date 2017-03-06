@@ -20,7 +20,7 @@
 The dataset consists of 517,431 messages that belong to 150 users, mostly senior management of the Enron Corp. Although the
 dataset is huge, folders of particular users are often quite sparse.
 
-For our purposes, we only look at **`sent emails`** and ignore the inboxes of all the employees. Through this approach, we can avoid accidentally analysing the spam emails that are among the received emails. Two main methods of analyses were employed, namely, **`topic modelling with Latent Dirichlet Allocation(LDA)`** and **`sentiment analysis`**.
+For our purposes, we only look at **`sent emails`** and ignore the inboxes of all the employees. Through this approach, we can avoid accidentally analysing the spam emails that are among the received emails. Two main methods of analyses were employed, namely, topic modelling with **`Latent Dirichlet Allocation(LDA)`** and **`sentiment analysis`**.
 
 #### Data processing:
 - the emails in their raw form contain a lot of information that is unsuitable for topic modelling analysis.
@@ -28,7 +28,7 @@ For our purposes, we only look at **`sent emails`** and ignore the inboxes of al
 - **`Latent Dirichlet Allocation`**  was performed on the dataset with the number of topics, k = 4. The following is a list of the top 10 terms for each of the 4 topics. Note that the words have been stemmed to save memory.
 
 | Meeting | Process | Core   | Casual
-| --------|:--------| ------:|:-------
+| --------|:--------|:-------|:-------
 | message | enron   | market | thank
 | origin  | deal    | gas    | call
 | pleas   |agreement| price  | time
@@ -45,3 +45,7 @@ For our purposes, we only look at **`sent emails`** and ignore the inboxes of al
 2. Topic 2 while related to business seems to be more about the process rather than the content of the core business. It has a lot of terms relevant to business legalities.
 3. Topic 3 contains words that are directly related to the core business of Enron like ”gas”, ”power” etc.
 4. Topic 4 also seems to be meeting-related but in a more casual tone and setting.
+
+## Analysis:
+
+![alt tag](file:///usr/local/share/Word%20count%20for%20different%20types.html)
