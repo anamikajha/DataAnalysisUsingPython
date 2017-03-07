@@ -125,6 +125,5 @@ the user information was analyzed to determine the most active user on the websi
 The output file named Analysis2_results_Community is kept in the Extra files folder under midterm.
 
 ## Conclusion:
-- From the above plots we see that even in the latest 25 matches Rex Sox has only won a total of 11 matches. 
-- Similar statistics are reflected by the statistics plot which shows that of all 105 matches, Red Sox has won only 49 and lost 51 matches with a draw of 5 matches
+
 
