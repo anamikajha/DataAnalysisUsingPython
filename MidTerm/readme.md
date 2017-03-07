@@ -111,27 +111,33 @@ The output file named Red Sox.csv is kept in the Extra files folder under midter
 ## Conclusion:
 - From the above plots we see that even in the latest 25 matches Rex Sox has only won a total of 11 matches. 
 - Similar statistics are reflected by the statistics plot which shows that of all 105 matches, Red Sox has won only 49 and lost 51 matches with a draw of 5 matches
+- Also it was observed that of all the 105 matches that Red Sox played, 79 of the matches were against Yankees and of those 79 matches Red Sox lost 38 of them. Hence Red Sox needs to improve its strategy and game against Yankees in future.
 
 ------------------------------------------------------------------------------------------------------------------------------
 
 ### Dataset 2 : Community dataset for user details and their total posts
 
-`100 jason files downloaded from community API`
+`100 jason files downloaded from community API for the year of 2016`
 
 ## Analysis: 
 
 The dataset consists of 100 json files which were read using the glob function. The articles were analyzed one by one and the user information from these files were extracted. The information contains user names, their location and the URL of the articles they have commented on.
-the user information was analyzed to determine the most active user on the website.
-
-- Total count of comments per user was calculated to obtain most active users.
-- Top 20 of the users were selected to plot the below graph:
+- The user information was analyzed to determine the most active user on the website.
+- The location of the users were extracted and counted to see which city has most active users.
+- The keywords from the URLs are extracted to see what is the most talked about topic, which for the year 2016 is Politics.
 
 ![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Total%20posts%20by%20top%2020%20users.png)
 
-- The locations of the users were counted to see which city most of the users belong to
-- The following graph shows top 15 cities where the website is most popular
+The plot above shows the count of activities of most active users.
+- Total count of comments per user was calculated to obtain most active users.
+- Top 20 of the users were selected to plot the below graph:
+
 
 ![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Top%20cities.png)
+
+The plot above shows the count of city where our website is most popular.
+- The locations of the users were counted to see which city most of the users belong to
+- The following graph shows top 15 cities where the website is most popular
 
 ### Output file:
 The output file named Analysis2_results_Community is kept in the Extra files folder under midterm.
@@ -139,4 +145,4 @@ The output file named Analysis2_results_Community is kept in the Extra files fol
 ## Conclusion:
 - From the above plots we see that there are few users who are pretty active and comments on multiple articles. 
 - When getting the count of the location we see that most of our readers are from New York and the website is popular there.
-
+- On extracting the keywords from URL, we see that most of the URLs are about politics. Hence in 2006 politics is the most talked about topic.
