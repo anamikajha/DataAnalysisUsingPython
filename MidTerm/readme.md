@@ -64,6 +64,9 @@ Casual vs Process count            |  Message vs Core count
 :-------------------------:        |:-------------------------:
 ![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/casual%20count%20vs%20Process%20count.png)  |  ![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Message%20count%20vs%20core%20count.png)
 
+### Output file:
+4 output file named enron_core.csv, enron_casual.csv, enron_process.csv and enron_meeting.csv is kept in the Extra files folder under midterm. These files have the words belonging to each category with their respective counts.
+
 ## Conclusion:
 In conclusion, although topic modelling and sentiment analysis do provide some useful insights into the data, it is still unclear as to whether they can be used as investigation tools. However, with that being said, there are some ways in which the analysis can be improved upon. For example, analysis can be conducted by focusing on users who directories are especially large, namely, Sally Beck (Chief Operating Officer), Darren Farmer (Logistics Manager), Vincent Kaminski (Head of Quantitative Modeling Group), Louise Kitchen (President of EnronOnline), Michelle Lokay (Administrative Assistant), Richard Sanders (Assistant General Counsel) and Williams III (Senior Analyst). This would ensure that only the emails of most relevant people to the scandal are examined and this might reveal more interesting patterns.
 
@@ -89,12 +92,39 @@ All these scores were exracted from the json files, sorted and split to write in
 - Total goals scored by Red Sox over 105 matches were plot against the opponent team using bar chart
 - A scatter plot of all Red Sox score vs opponent score was generated
 
-![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Scatterplot_redsoxvsopponent.png)
+![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/score%20distribution%20for%20top%2020%20matches.png)
 
 Red Sox vs Opponet for latest 20 matches            |  Total matches won,lost and draw by Red Sox
 :-------------------------:                         |:-------------------------:
 ![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Red%20Sox%20vs%20opponent.png)  |  ![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Red%20Sox%20statistics.png)
 
+### Output file:
+The output file named Red Sox.csv is kept in the Extra files folder under midterm.
+
 ## Conclusion:
 - From the above plots we see that even in the latest 25 matches Rex Sox has only won a total of 11 matches. 
 - Similar statistics are reflected by the statistics plot which shows that of all 105 matches, Red Sox has won only 49 and lost 51 matches with a draw of 5 matches
+
+
+
+### Dataset 2 : Community dataset for user details and their total posts
+
+`100 jason files downloaded from community API`
+
+## Analysis: 
+
+The dataset consists of 100 json files which were read using the glob function. The articles were analyzed one by one and the user information from these files were extracted. The information contains user names, their location and the URL of the articles they have commented on.
+the user information was analyzed to determine the most active user on the website.
+
+- Total count of comments per user was calculated to obtain most active users.
+
+
+![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Total%20posts%20by%20top%2020%20users.png)
+
+### Output file:
+The output file named Analysis2_results_Community is kept in the Extra files folder under midterm.
+
+## Conclusion:
+- From the above plots we see that even in the latest 25 matches Rex Sox has only won a total of 11 matches. 
+- Similar statistics are reflected by the statistics plot which shows that of all 105 matches, Red Sox has won only 49 and lost 51 matches with a draw of 5 matches
+
