@@ -60,6 +60,10 @@ We again see a dip in the word counts of process words in October, this is when
 - Enron reported a $618 million loss and $1.2 billion value right off. 
 - Enrons stock price dropped to alomst half of its price in this month
 
+The below plot shows total count of words from every category for the years of 1999,2000,2001
+- 
+
+
 Casual vs Process count            |  Message vs Core count
 :-------------------------:        |:-------------------------:
 ![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/casual%20count%20vs%20Process%20count.png)  |  ![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Message%20count%20vs%20core%20count.png)
