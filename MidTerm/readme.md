@@ -117,10 +117,12 @@ The dataset consists of 100 json files which were read using the glob function. 
 the user information was analyzed to determine the most active user on the website.
 
 - Total count of comments per user was calculated to obtain most active users.
+- Top 20 of the users were selected to plot the below graph:
 
 ![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Total%20posts%20by%20top%2020%20users.png)
 
 - The locations of the users were counted to see which city most of the users belong to
+- The following graph shows top 15 cities where the website is most popular
 
 ![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Top%20cities.png)
 
