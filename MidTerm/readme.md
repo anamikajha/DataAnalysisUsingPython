@@ -105,7 +105,7 @@ The output file named Red Sox.csv is kept in the Extra files folder under midter
 - From the above plots we see that even in the latest 25 matches Rex Sox has only won a total of 11 matches. 
 - Similar statistics are reflected by the statistics plot which shows that of all 105 matches, Red Sox has won only 49 and lost 51 matches with a draw of 5 matches
 
-
+------------------------------------------------------------------------------------------------------------------------------
 
 ### Dataset 2 : Community dataset for user details and their total posts
 
