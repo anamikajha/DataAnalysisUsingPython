@@ -61,8 +61,11 @@ We again see a dip in the word counts of process words in October, this is when
 - Enrons stock price dropped to alomst half of its price in this month
 
 The below plot shows total count of words from every category for the years of 1999,2000,2001
-- 
 
+![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Yearly%20usage%20of%20words.png)
+ 
+ - As we can see from the plot above that there is a sharp increase in the word count of process and casual category in the year 2000. **`We know that during the year 2000 Enrons shares skyrocket to an all time high at $90.56`**
+ - Hence there might have been quite a lot of process change emails going on between the top associates of the company
 
 Casual vs Process count            |  Message vs Core count
 :-------------------------:        |:-------------------------:
