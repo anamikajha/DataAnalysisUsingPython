@@ -118,12 +118,16 @@ the user information was analyzed to determine the most active user on the websi
 
 - Total count of comments per user was calculated to obtain most active users.
 
-
 ![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Total%20posts%20by%20top%2020%20users.png)
+
+- The locations of the users were counted to see which city most of the users belong to
+
+![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Top%20cities.png)
 
 ### Output file:
 The output file named Analysis2_results_Community is kept in the Extra files folder under midterm.
 
 ## Conclusion:
-
+- From the above plots we see that there are few users who are pretty active and comments on multiple articles. 
+- When getting the count of the location we see that most of our readers are from New York and the website is popular there.
 
