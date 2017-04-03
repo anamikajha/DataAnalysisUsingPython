@@ -1,5 +1,8 @@
 ## Welcome to Data Analysis Using Python Repository
-
+Assignment 2  Comments:</br>
+->Q2 Part 1 - Only 744/11728 json files dumped
+->Do NOT PRINT all text(Q1)
+->Dont upload Zip files
 ### Markdown
 
 - This repository contains assignment files for Python
