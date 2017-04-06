@@ -92,7 +92,7 @@ JobFamilyAvg['Percent_Total_Benefit'] = (JobFamilyAvg['Total Benefits'] / JobFam
 JobFamilyAvg.head()
 
 
-# In[14]:
+# In[13]:
 
 #reseting the index to make a flat index
 JobFamilyAvg = JobFamilyAvg.reset_index()
