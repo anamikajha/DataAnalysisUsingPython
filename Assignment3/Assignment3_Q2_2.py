@@ -10,29 +10,29 @@
 # - Generate CSV for all the employee records with overtime salary is greater than 5% of their salary
 # - Generate CSV with 4 columns(Job family, Total benefits, Total Compensation and percentage of total benefits)
 
-# In[5]:
+# In[1]:
 
 import os
 import pandas as pd
 import numpy as np
 
 
-# In[6]:
+# In[2]:
 
 #getting current working directory
 b = os.getcwd()
 
 #reading the csv file
-df = pd.read_csv(b+"/"+"employee_compensation.csv", usecols=[0,1,9,11,12,13,14,15,16,17,18,19,20,21])
+df = pd.read_csv(b+"/"+"Data/employee_compensation.csv", usecols=[0,1,9,11,12,13,14,15,16,17,18,19,20,21])
 
 
-# In[7]:
+# In[3]:
 
 #printing the top 5 records of the data frame
 df.head()
 
 
-# In[8]:
+# In[4]:
 
 #filtering data for only Calendar year type
 Cal_Data = df[df['Year Type'] == "Calendar"]
@@ -40,25 +40,25 @@ Cal_Data = df[df['Year Type'] == "Calendar"]
 Cal_Data.head()
 
 
-# In[9]:
+# In[5]:
 
 #Calculating the mean of all the different types of salary columns
 AvgSal = df.groupby(['Year','Job Family','Job','Employee Identifier']).mean()
 
 
-# In[19]:
+# In[6]:
 
 #printing the first 5 records of the resultant dataset
 AvgSal.head()
 
 
-# In[11]:
+# In[7]:
 
 #resetting the index of the dataset to create a flat index
 AvgSal = AvgSal.reset_index()
 
 
-# In[12]:
+# In[8]:
 
 #Filtering the records of employees with overtime value more than 5% of Salaries
 Ovrtime_ = AvgSal[AvgSal['Overtime'] > 0.05 * AvgSal['Salaries']]
@@ -66,14 +66,14 @@ Ovrtime_ = AvgSal[AvgSal['Overtime'] > 0.05 * AvgSal['Salaries']]
 Ovrtime_.head()
 
 
-# In[28]:
+# In[9]:
 
-#Filtering out Job Family, Total Benefits and Total Compensation to a new dataframe
-JobFamilyAvg = AvgSal[['Job Family', 'Total Benefits', 'Total Compensation']]
+#Filtering out Job Family, Total Benefits and Total Compensation for employees with overtime > 5% of salary to a new dataframe
+JobFamilyAvg = Ovrtime_[['Job Family', 'Total Benefits', 'Total Compensation']]
 JobFamilyAvg = JobFamilyAvg.groupby(['Job Family']).mean()
 
 
-# In[29]:
+# In[10]:
 
 #printing out the top 5 Job family data with average Benefits and Compensation
 JobFamilyAvg.head()
@@ -81,28 +81,32 @@ JobFamilyAvg.head()
 #JobFamilyAvg.shape
 
 
-# In[30]:
+# In[11]:
 
 #calculating the percentage total benefits columns based on Total Benefits and Total Compensation
 JobFamilyAvg['Percent_Total_Benefit'] = (JobFamilyAvg['Total Benefits'] / JobFamilyAvg['Total Compensation']) * 100
 
 
-# In[31]:
+# In[12]:
 
 JobFamilyAvg.head()
 
 
-# In[32]:
+# In[14]:
 
 #reseting the index to make a flat index
 JobFamilyAvg = JobFamilyAvg.reset_index()
 
-JobFamilyAvg
+#sorting with highest values first
+JobFamilyAvg = JobFamilyAvg.sort_values(['Percent_Total_Benefit'], ascending=[False])
+
+#printing the top 5 percent total benefits
+JobFamilyAvg.head()
 
 
 # ## Printing the result in a csv
 
-# In[34]:
+# In[15]:
 
 #function to check is directory exists
 def funCheckDir(path):
@@ -110,23 +114,20 @@ def funCheckDir(path):
     if not os.path.exists(directory): # checking if directory already exists
         os.makedirs(directory) # making a directory
 
-#printing the first csv with overtime data        
-resultsPath1 = b+"/Q2_Part_2_overtimeData.csv"
+#printing the result data        
+resultsPath = b+"/Q2_Part_2.csv"
 
-#printing the second csv with total compensation data
-resultsPath2 = b+"/Q2_Part_2_PercentTotBenefit.csv"
-
-funCheckDir(resultsPath1)
-funCheckDir(resultsPath2)
+funCheckDir(resultsPath)
 
 # Saving our result dataFrame to csv file.
-Ovrtime_.to_csv(resultsPath1, index=False, encoding='utf-8')
-JobFamilyAvg.to_csv(resultsPath2, index=False, encoding='utf-8')
+JobFamilyAvg.to_csv(resultsPath, index=False, encoding='utf-8')
 
 
-# In[ ]:
+# ## Converting the .ipynb file to .py file
 
+# In[16]:
 
+get_ipython().system('jupyter nbconvert --to script Assignment3_Q2_2.ipynb')
 
 
 # In[ ]:

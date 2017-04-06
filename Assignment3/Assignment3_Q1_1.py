@@ -10,36 +10,36 @@
 #     - Calculate the percentage of accidents in Manhattan over total in NYC
 # - Generate CSV with 4 columns(Month, Manhattan, NYC, %)
 
-# In[41]:
+# In[1]:
 
 import os
 import pandas as pd
 
 
-# In[59]:
+# In[2]:
 
 #getting current working directory
 b = os.getcwd()
 
 #reading the csv file
-df = pd.read_csv(b+"/"+"vehicle_collisions.csv", parse_dates=['DATE'], usecols=[0,1,3]) #vehicle_collisions.csv, , delim_whitespace=True, , header=None
+df = pd.read_csv(b+"/"+"Data/vehicle_collisions.csv", parse_dates=['DATE'], usecols=[0,1,3]) #vehicle_collisions.csv, , delim_whitespace=True, , header=None
 
 
-# In[73]:
+# In[3]:
 
 #printing first 5 columns of the data frame
 df.head(5)
 
 
-# In[61]:
+# In[4]:
 
 # getting data for only the year of 2016 and storing it in new dataframe
 df_2016 = df[df.DATE.dt.year == 2016]
 
-df_2016[:5]
+df_2016.head()
 
 
-# In[74]:
+# In[5]:
 
 # Offsetting the warning
 pd.options.mode.chained_assignment = None
@@ -53,7 +53,7 @@ df_2016['Month'] = df_2016['DATE'].dt.strftime('%b')
 df_2016.head()
 
 
-# In[97]:
+# In[6]:
 
 # counting the number of accidents in NYC by grouping it with months
 NYC_Data = df_2016['UNIQUE KEY'].groupby(df_2016['Month']).count()
@@ -61,39 +61,39 @@ NYC_Data = df_2016['UNIQUE KEY'].groupby(df_2016['Month']).count()
 NYC_Data
 
 
-# In[98]:
+# In[10]:
 
 # Sorting month according to calendar
-NYC.index = pd.CategoricalIndex(NYC.index, 
+NYC_Data.index = pd.CategoricalIndex(NYC_Data.index, 
                                categories=['Jan', 'Feb', 'Mar', 'Apr','May','Jun', 'Jul', 'Aug','Sep', 'Oct', 'Nov', 'Dec'], 
                                sorted=True)
-NYC_Data = NYC.sort_index()
+NYC_Data = NYC_Data.sort_index()
 
 NYC_Data
 
 
-# In[99]:
+# In[12]:
 
 # grouping Data by month and counting the number of accidents in Manhattan
 Manhattan_Data = df_2016['UNIQUE KEY'][df_2016['BOROUGH'] == "MANHATTAN"].groupby(df_2016['Month']).count()
 
 # Sorting month according to calendar
-Manhattan.index = pd.CategoricalIndex(Manhattan.index, 
+Manhattan_Data.index = pd.CategoricalIndex(Manhattan_Data.index, 
                                categories=['Jan', 'Feb', 'Mar', 'Apr','May','Jun', 'Jul', 'Aug','Sep', 'Oct', 'Nov', 'Dec'], 
                                sorted=True)
-Manhattan_Data = Manhattan.sort_index()
+Manhattan_Data = Manhattan_Data.sort_index()
 Manhattan_Data
 
 
-# In[115]:
+# In[15]:
 
 # Create new Data frame with both NYC and Manhattan data
 Columns = ["Month","Manhattan", "NYC", "Percentage"]
-dataFrame = pd.DataFrame({'Month' : NYC.index, 'Manhattan' : Manhattan_Data, 'NYC' : NYC_Data, 'Percentage' : Manhattan_Data / NYC_Data})
-Percent_df[Columns].head()
+dataFrame = pd.DataFrame({'Month' : NYC_Data.index, 'Manhattan' : Manhattan_Data, 'NYC' : NYC_Data, 'Percentage' : Manhattan_Data / NYC_Data})
+dataFrame[Columns].head()
 
 
-# In[96]:
+# In[ ]:
 
 #df1 = pd.merge(Manhattan, NYC, on='key',how='outer')
 #merge is giving error as 
@@ -102,7 +102,7 @@ type(Manhattan)
 
 # ## printing the result in a csv
 
-# In[116]:
+# In[ ]:
 
 #function to check is directory exists
 def funCheckDir(path):
@@ -117,18 +117,9 @@ funCheckDir(resultsPath)
 Percent_df[Columns].to_csv(resultsPath, index=False, encoding='utf-8')
 
 
-# In[117]:
-
-get_ipython().system('jupyter nbconvert --to script config_template.ipynb')
-
+# ## Converting the .ipynb file to .py file
 
 # In[ ]:
 
-
-
-
-# In[ ]:
-
-#df = pd.read_csv(currentDirect+"//"+"Assignment 3"+"//"+"cricket_matches.csv" , usecols=[6,7,8,12,13,17,18])
-#df.head()
+get_ipython().system('jupyter nbconvert --to script Assignment3_Q1_1.ipynb')
 
