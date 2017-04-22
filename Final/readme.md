@@ -18,12 +18,10 @@ Having a separate page for different questions being asked makes knowledge-shari
 - Knowledge seekers can access all the answers to a question on a single thread
 - Writers can reach a larger readership than if that audience was divided amongst several pages.
 
-### Preview of dataset:
-![alt tag]
-(https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Extra%20Files/Preview%20of%20data.png)
-
 ### Content
 There are over 400,000 lines of potential question duplicate pairs. Each line contains IDs for each question in the pair, the full text for each question, and a binary value that indicates whether the line truly contains a duplicate pair.
+![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Extra%20Files/Preview%20of%20data.png)
+
 
 ### Acknowledgements
 For more information on this dataset, check out Quora's first dataset release page:
