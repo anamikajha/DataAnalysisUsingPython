@@ -37,11 +37,25 @@ For starters few mathematical calculations on the dataset have been done to get 
 
 A histogram plot of number of time a question has repeated has been created.
 
+![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Analysis_1_ExtraFiles/Question%20appearance%20count.png)
+In the above bar chart we see that most questions only appear a few times, with very few questions appearing several times (and a few questions appearing many times). One question appears more than 60 times, (We consider this is to be an outlier). This is not an ideal case. Ideally all questions should have one count.
 
+Now some feature analysis has been done on the dataset like extracting the length of questions1 and question 2, counting total number of words in the question pair combined and separate and then calculating the overlapping words (i.e, the common words between the 2 questions in a set). Word share values has been normalised to range between 0 and 1. Plots have been made based on this normalised common words between the two questions.
 
+![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Analysis_1_ExtraFiles/violin_chart%20count%20of%20common%20words.png)
 
+The thickness of the violin plot represents the common words between the two questions. Hence for the non duplicate set of questions the thickness of the plot is more towards the lower value whereas for duplicate set of questions depicted in green the thickness goes upwards.
 
+![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Analysis_1_ExtraFiles/scatter%20plot%20of%20character%20lengths.png)
 
+![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Analysis_1_ExtraFiles/Q1%20length%20vs%20Q2%20length.png)
+The above plot is a dynamic plot which shows the common word count between the two questions where the red color represents completely duplicate and blue represents totally non duplicate words.
+
+Character count per question            |  Word count per question
+:-------------------------:             |:-------------------------:
+![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Analysis_1_ExtraFiles/character%20count.png)  |  ![](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Analysis_1_ExtraFiles/word%20count.png)
+
+The above two histogram plot depicts the number of characters and words per questions. As we see most of the questions character length varies between 25-100 which on an approximation should fall under 5-20 words as shown in the second plot.
 
 
 
