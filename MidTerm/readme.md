@@ -52,7 +52,7 @@ For our purposes, we only look at **`sent emails`** and ignore the inboxes of al
 
 ## Analysis:
 
-![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Monthly%20count%20of%20words.png)
+![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Monthly%20count%20of%20words.png)
 
 Clearly, there is an abnormal spike in the word counts in the month of March when Jefferey Skiing was replaces by Kenneth Lay as CEO in 2001. This could have resulted in a lot of mail chains between the top officials in the organisation. As we see the maximum spike is for process word counts which could be because of the change in process with new CEO. The abnormal spike can be explained Enron’s exemplary performance, Fortune Magazine had just named Enron as the ”Most Innovative American Company” 3 times in a row and the stock price of Enron was at an all-time high.  The trend then gradually declines followed by a steady increase near August. 
 
@@ -99,7 +99,7 @@ All these scores were exracted from the json files, sorted and split to write in
 - Total goals scored by Red Sox over 105 matches were plot against the opponent team using bar chart
 - A scatter plot of all Red Sox score vs opponent score was generated
 
-![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/score%20distribution%20for%20top%2020%20matches.png)
+![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/score%20distribution%20for%20top%2020%20matches.png)
 
 Red Sox vs Opponet for latest 20 matches            |  Total matches won,lost and draw by Red Sox
 :-------------------------:                         |:-------------------------:
@@ -126,7 +126,7 @@ The dataset consists of 100 json files which were read using the glob function. 
 - The location of the users were extracted and counted to see which city has most active users.
 - The keywords from the URLs are extracted to see what is the most talked about topic, which for the year 2016 is Politics.
 
-![alt tag] (https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Total%20posts%20by%20top%2020%20users.png)
+![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/MidTerm/Extra%20Files/Total%20posts%20by%20top%2020%20users.png)
 
 The plot above shows the count of activities of most active users.
 - Total count of comments per user was calculated to obtain most active users.
