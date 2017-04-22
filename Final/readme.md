@@ -57,7 +57,14 @@ Character count per question            |  Word count per question
 
 The above two histogram plot depicts the number of characters and words per questions. As we see most of the questions character length varies between 25-100 which on an approximation should fall under 5-20 words as shown in the second plot.
 
+#### `Analysis 2 : Analyzing the reason behind pairing of questions`
+In this analysis we have studied the pairing of questions. Each question is paired with one other questions. As we have seen in other analysis that these question share a lot of words in common then why a particular question is paired with the respective question in question 2 column? This analysis is specific to non duplicate question set. 
 
+The analysis includes:
+- Creating a subset of questions with only non duplicate pair of questions
+- Use fuzzywuzzy to compare the content of two questions in the same set. This function gives a matching index value between 0-100 which is stored in a new column as matching index in the dataframe.
+
+Now in the result set we see that there are few columns which shows a matching index of 100%. This should not be the case if these questions are non duplicate.Thus we have separated the question pair with 100% matching index and check if one of the 2 questions is a subset of the other. In our analysis we see that there are 10454 rows of non duplicate questions and they are all subset of the other question in the pair. Hence 100% matching index is justified. 
 
 
 ### Acknowledgements
