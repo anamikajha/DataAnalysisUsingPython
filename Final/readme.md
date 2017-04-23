@@ -1,4 +1,3 @@
-
 # Final Exam Submission: 
 ### `QUORA Question Pairs Dataset`
 
@@ -10,7 +9,7 @@
   - pip install python-levenshetein
   - pip install fuzzywuzzy
   
- ### Dataset : Quora Question Pairs dataset
+### Dataset : Quora Question Pairs dataset
 The dataset is based on actual data from Quora. Quora's first public dataset is related to the problem of identifying duplicate questions. Ideally there should be a single question page for each logically distinct question. For example, the queries “How many states India has” and “What are the number of states in India” should not exist separately on Quora. 
  
 Having a separate page for different questions being asked makes knowledge-sharing more efficient in many ways: 
@@ -65,6 +64,14 @@ The analysis includes:
 - Use fuzzywuzzy to compare the content of two questions in the same set. This function gives a matching index value between 0-100 which is stored in a new column as matching index in the dataframe.
 
 Now in the result set we see that there are few columns which shows a matching index of 100%. This should not be the case if these questions are non duplicate.Thus we have separated the question pair with 100% matching index and check if one of the 2 questions is a subset of the other. In our analysis we see that there are 10454 rows of non duplicate questions and they are all subset of the other question in the pair. Hence 100% matching index is justified. 
+
+#### `Analysis 3 : Categorizing the questions`
+For this analysis different categories of questions are created (like explaination, Reasoning, Location based, Numeric, categorical, Timeline, Yes/No questions). A list of all the questions was created (Adding both questions from non duplicate set and adding only one question from duplicate set of questions).Then all the questions from the set are matched against each category of questions.
+Now considering the fact that one question may contain two or more questions (like Who is Donald Trump and where does he live?) we have considered all questions with a matching index > = 60% and assigned a weight of 1 to them. Summation of the weight gives us a total count of questions belonging to each category.
+
+NOTE: The total sum of count against all categories may exceed the total count of the questions as one question can belong to more than one category.
+
+
 
 
 ### Acknowledgements
