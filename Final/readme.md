@@ -97,7 +97,7 @@ Word cloud was implemented to check the same results.
 ![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Analysis_4_ExtraFiles/wordCloud.png)
 
 #### `Analysis 5 : Sentiment analysis of questions`
-In this analysis we have first created a list of all the questions taking similar approach that we have done in previous analysis. Now we create two other list of positive and negative sentiments. Once we have these three list we now split each question word by word and compare it to the positive and negative lists. 
+In this analysis we have first created a list of all the questions taking similar approach that we have done in previous analysis. Now we create two other list of positive and negative sentiments(These are a set of downloaded csv files from internet). Once we have these three list we now split each question word by word and compare each word to the positive and negative lists. 
 
 Once all the words for a question has been compared we check the count of the positive and the negative words. If the count of positive words are greater then the question is classified in the positive category else negative. If they dont fall in either of the category then it is classified as a neutral sentiment question.
 
