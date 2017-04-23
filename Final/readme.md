@@ -70,7 +70,7 @@ The analysis includes:
 
 Now in the result set we see that there are few columns which shows a matching index of 100%. This should not be the case if these questions are non duplicate.Thus we have separated the question pair with 100% matching index and check if one of the 2 questions is a subset of the other. 
 
-`Conclusion: `
+##### `Conclusion: `
 In our analysis we see that there are 10454 rows of non duplicate questions and they are all subset of the other question in the pair. Hence 100% matching index is justified. 
 
 #### `Analysis 3 : Categorizing the questions`
@@ -79,7 +79,8 @@ Now considering the fact that one question may contain two or more questions (li
 
 NOTE: The total sum of count against all categories may exceed the total count of the questions as one question can belong to more than one category.
 
-`Conclusion:`
+##### `Conclusion:`
+
 ![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Analysis_3_ExtraFiles/categories%20of%20questions.png)
 
 The total count of questions belonging in each category is then saves as an ouput csv file.
@@ -89,8 +90,10 @@ Of all the questions that were asked in 2016 we want to know how many questions 
 
 The list of questions were matched against the trending word list and the the total count of questions for each trending words were calculated.
 
-`Conclusion:`
+##### `Conclusion:`
+
 Word cloud was implemented to check the same results.
+
 ![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Analysis_4_ExtraFiles/wordCloud.png)
 
 #### `Analysis 5 : Sentiment analysis of questions`
@@ -98,7 +101,7 @@ In this analysis we have first created a list of all the questions taking simila
 
 Once all the words for a question has been compared we check the count of the positive and the negative words. If the count of positive words are greater then the question is classified in the positive category else negative. If they dont fall in either of the category then it is classified as a neutral sentiment question.
 
-`Conclusion:`
+##### `Conclusion:`
 In our analysis we see that most of the question falls in the neutral category. They usually dont have emotions attached to them.
 
 
