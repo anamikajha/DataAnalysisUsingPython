@@ -71,7 +71,15 @@ Now considering the fact that one question may contain two or more questions (li
 
 NOTE: The total sum of count against all categories may exceed the total count of the questions as one question can belong to more than one category.
 
+![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Analysis_3_ExtraFiles/categories%20of%20questions.png)
 
+#### `Analysis 4 : Count of questions belonging to trending category`
+Of all the questions that were asked in 2016 we want to know how many questions were asked based on the trending topics. A list of all the questions were created (Adding both questions from non duplicate set and adding only one question from duplicate set of questions).A new list of all the trending words in 2017 were created. 
+
+The list of questions were matched against the trending word list and the the total count of questions for each trending words were calculated.
+
+Word cloud was implemented to check the same results.
+![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Analysis_4_ExtraFiles/wordCloud.png)
 
 
 ### Acknowledgements
