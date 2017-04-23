@@ -31,7 +31,7 @@ For starters few mathematical calculations on the dataset have been done to get 
 - percentage of questions with question marks
 - percentage of questions that has math tags
 - percentage of questions that have punctuation marks in them
-- percentage of questions that have capitalied first word
+- percentage of questions that have capitalized first word
 - percentage of questions that has numbers in them 
 
 A histogram plot of number of time a question has repeated has been created.
