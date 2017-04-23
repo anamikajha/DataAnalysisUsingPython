@@ -21,7 +21,7 @@ Having a separate page for different questions being asked makes knowledge-shari
 There are over 400,000 lines of potential question duplicate pairs. Each line contains IDs for each question in the pair, the full text for each question, and a binary value that indicates whether the line truly contains a duplicate pair.
 ![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Extra%20Files/Preview%20of%20data.png)
 
-#### `Analysis 1 : Understanding the dataset and plotting difference between the duplicate and non duplicate questions using term frquency analysis`
+#### `Analysis 1 : Understanding the dataset and plotting term frquency analysis for each question`
 First analysis is more about understanding the dataset. Different types of charts have been incorporated in this analysis to have an easy visual understanding of the dataset. Normalised word share count has been calculated to be used in plots. Common words between the questions and term frequency of these question pair sets have also been calculated. These analysis have been discuss further in detail below.
 
 For starters few mathematical calculations on the dataset have been done to get an idea of:
@@ -56,6 +56,11 @@ Character count per question            |  Word count per question
 
 The above two histogram plot depicts the number of characters and words per questions. As we see most of the questions character length varies between 25-100 which on an approximation should fall under 5-20 words as shown in the second plot.
 
+![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Analysis_1_ExtraFiles/word%20match%20share%20based%20on%20key%20value%20count.png)
+
+Here we can see that this feature is good at separating the duplicate questions from the non-duplicate ones. Interestingly, it seems very good at identifying questions which are definitely different, but is not so great at finding questions which are definitely duplicates.
+
+
 #### `Analysis 2 : Analyzing the reason behind pairing of questions`
 In this analysis we have studied the pairing of questions. Each question is paired with one other questions. As we have seen in other analysis that these question share a lot of words in common then why a particular question is paired with the respective question in question 2 column? This analysis is specific to non duplicate question set. 
 
@@ -80,6 +85,8 @@ The list of questions were matched against the trending word list and the the to
 
 Word cloud was implemented to check the same results.
 ![alt tag](https://github.com/anamikajha/DataAnalysisUsingPython/blob/master/Final/Analysis/Analysis_4_ExtraFiles/wordCloud.png)
+
+#### `Analysis 5 : Sentiment analysis of questions`
 
 
 ### Acknowledgements
